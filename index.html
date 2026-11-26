@@ -36,6 +36,10 @@
       <svg viewBox="0 0 144 24" aria-hidden="true"><path class="pl-wave" d="M2 12c12-12 22-12 34 0s22 12 34 0 22-12 34 0 22 12 34 0"/></svg>
       <div class="pl-sub">Surf camp · Weligama</div>
     </div>
+    <script>
+      // Safety net: never leave visitors stuck on the loading screen if the app fails to start
+      setTimeout(function () { var p = document.getElementById('preloader'); if (p) p.classList.add('is-done'); }, 8000);
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

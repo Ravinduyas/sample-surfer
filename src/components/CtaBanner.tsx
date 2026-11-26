@@ -11,7 +11,7 @@ interface CtaBannerProps {
 // Dark photo banner that closes a page with a booking prompt
 export const CtaBanner: React.FC<CtaBannerProps> = ({
   title = 'READY FOR YOUR SURF HOLIDAY?',
-  text = 'Learn to surf, improve your skills, or simply enjoy the blend of boutique rooms, daily social events, rooftop sunsets and unforgettable waves. Join Soul Surfer Camp in Weligama.',
+  text = 'Learn to surf, improve your skills, or simply enjoy the blend of boutique rooms, daily social events, rooftop sunsets and unforgettable waves. Join Sample Surfer Camp in Weligama.',
 }) => {
   const { openBooking } = useModals();
 

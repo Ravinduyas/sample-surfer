@@ -52,3 +52,175 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(42, 54, 42, 0.4);
 }
+
+/* ============================================================
+   EFFECTS: loading, page transitions, scroll reveal, hovers
+   (JS side lives in src/utils/effects.ts)
+   ============================================================ */
+
+/* Brand easing */
+:root {
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Scroll progress bar --- */
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 3px;
+  z-index: 60;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: linear-gradient(90deg, #586857, #d9a35b);
+  pointer-events: none;
+}
+
+/* --- Page transition --- */
+.page-enter {
+  animation: page-in 0.7s var(--ease-out-soft) both;
+}
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* --- Scroll reveal --- */
+.reveal:not(.is-visible),
+html:not(.is-ready) .reveal {
+  opacity: 0;
+}
+html.is-ready .reveal.is-visible {
+  animation: reveal-up 0.9s var(--ease-out-soft) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(36px) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+
+/* --- Images: shimmer while loading, fade in when ready --- */
+img:not(.is-loaded) {
+  background: linear-gradient(100deg, #d9d1c1 30%, #ece6da 50%, #d9d1c1 70%);
+  background-size: 300% 100%;
+  animation: img-shimmer 1.4s linear infinite;
+}
+img.is-loaded:not([class*="opacity-"]) {
+  animation: img-fade 0.8s ease both;
+}
+@keyframes img-shimmer {
+  from { background-position: 100% 0; }
+  to { background-position: 0 0; }
+}
+@keyframes img-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slow zoom on the big photos at the top of each page */
+img.hero-zoom.is-loaded {
+  animation: img-fade 1s ease both, hero-zoom 14s var(--ease-out-soft) both;
+}
+@keyframes hero-zoom {
+  from { transform: scale(1.12); }
+  to { transform: scale(1); }
+}
+
+/* --- Hovers --- */
+
+/* Pill buttons and links: lift, light sweep, press */
+@layer components {
+  :is(button, a).rounded-full {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+}
+:is(button, a).rounded-full:not(:disabled) {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: 0.35s;
+  transition-timing-function: var(--ease-out-soft);
+}
+:is(button, a).rounded-full::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+:is(button, a).rounded-full:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+:is(button, a).rounded-full:not(:disabled):hover::after {
+  transform: translateX(120%);
+  transition: transform 0.8s var(--ease-out-soft);
+}
+:is(button, a).rounded-full:not(:disabled):active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 0.1s;
+}
+
+/* Cards: lift with a deeper shadow */
+.group.hover\:shadow-lg {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: 0.45s;
+  transition-timing-function: var(--ease-out-soft);
+}
+.group.hover\:shadow-lg:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 40px -18px rgba(30, 39, 30, 0.35);
+}
+
+/* Photos inside cards and galleries: gentle zoom and brighten */
+.group img {
+  transition: scale 0.9s var(--ease-out-soft), filter 0.6s ease, transform 0.9s var(--ease-out-soft);
+}
+.group:hover img:not(.hero-zoom):not([class*="filter"]) {
+  filter: saturate(1.12) brightness(1.04);
+}
+
+/* Arrow icons nudge in the direction they point */
+:is(a, button) svg:is(.lucide-arrow-up-right, .lucide-arrow-right, .lucide-arrow-down-right, .lucide-chevron-right) {
+  transition: transform 0.35s var(--ease-out-soft);
+}
+:is(a, button, .group):hover svg.lucide-arrow-up-right { transform: translate(3px, -3px); }
+:is(a, button, .group):hover svg:is(.lucide-arrow-right, .lucide-chevron-right) { transform: translateX(4px); }
+:is(a, button, .group):hover svg.lucide-arrow-down-right { transform: translate(3px, 3px); }
+
+/* Keyboard focus ring in brand colour */
+:is(a, button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid #586857;
+  outline-offset: 3px;
+}
+
+/* --- Modals and the mobile menu (these classes were in the markup but had no styles) --- */
+.animate-in.fade-in {
+  animation: fade-in 0.3s ease both;
+}
+.animate-in.slide-in-from-top-4 {
+  animation: slide-down 0.3s var(--ease-out-soft) both;
+}
+.fixed.inset-0.animate-in > div {
+  animation: modal-pop 0.5s var(--ease-out-soft) both;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-1rem); }
+}
+@keyframes modal-pop {
+  from { opacity: 0; transform: translateY(24px) scale(0.96); }
+}
+
+/* --- Respect reduced-motion settings --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; }
+}

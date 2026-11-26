@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -16,11 +16,12 @@ import { ModalContext, ModalActions } from './context/ModalContext';
 import { SurfPackage } from './types';
 import { PACKAGES } from './data/surfData';
 import { BLOG_POSTS } from './data/blogPosts';
+import { setupReveal } from './utils/effects';
 
-const SITE = 'Soul Surfer Camp Weligama';
+const SITE = 'Sample Surfer Camp Weligama';
 
 const PAGE_TITLES: Record<string, string> = {
-  '/': 'Boutique Surf Camp Weligama, Sri Lanka | Soul Surfer Camp',
+  '/': 'Boutique Surf Camp Weligama, Sri Lanka | Sample Surfer Camp',
   '/rates': `Surf Packages, Rooms & Rates | ${SITE}`,
   '/activities': `Activities | ${SITE}`,
   '/camp': `Inside the Camp | ${SITE}`,
@@ -49,6 +50,18 @@ const RouteEffects: React.FC = () => {
   return null;
 };
 
+// Re-mounts on every page change so the page fades in, then arms the scroll-reveal effects for it
+const AnimatedPage: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { pathname } = useLocation();
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => (ref.current ? setupReveal(ref.current) : undefined), [pathname]);
+  return (
+    <div key={pathname} ref={ref} className="page-enter space-y-4 sm:space-y-6">
+      {children}
+    </div>
+  );
+};
+
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState<SurfPackage | null>(null);
@@ -71,20 +84,22 @@ export default function App() {
           <div className="max-w-[1440px] min-[1600px]:max-w-[110rem] mx-auto space-y-4 sm:space-y-6">
             <Header />
 
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/rates" element={<RatesPage />} />
-              <Route path="/activities" element={<ActivitiesPage />} />
-              <Route path="/camp" element={<CampPage />} />
-              <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPostPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              {/* Old page addresses from the previous site */}
-              <Route path="/lessons" element={<Navigate to="/rates" replace />} />
-              <Route path="/camps" element={<Navigate to="/activities" replace />} />
-              <Route path="/about" element={<Navigate to="/camp" replace />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+            <AnimatedPage>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/rates" element={<RatesPage />} />
+                <Route path="/activities" element={<ActivitiesPage />} />
+                <Route path="/camp" element={<CampPage />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/blog/:slug" element={<BlogPostPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                {/* Old page addresses from the previous site */}
+                <Route path="/lessons" element={<Navigate to="/rates" replace />} />
+                <Route path="/camps" element={<Navigate to="/activities" replace />} />
+                <Route path="/about" element={<Navigate to="/camp" replace />} />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </AnimatedPage>
 
             <Footer />
           </div>

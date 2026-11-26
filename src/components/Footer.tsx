@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <Link to="/" className="flex items-baseline gap-2 focus:outline-none">
               <span className="font-serif-cormorant text-4xl sm:text-5xl font-light tracking-[0.12em] text-[#2a362a]">
-                SOUL SURFER
+                SAMPLE SURFER
               </span>
               <span className="font-serif-cormorant text-sm sm:text-base font-light tracking-[0.3em] text-[#2a362a]/80 uppercase">
                 Camp
@@ -83,7 +83,7 @@ export const Footer: React.FC = () => {
 
         {/* BOTTOM ROW */}
         <div className="pt-8 border-t border-[#dcd4c4] flex flex-col sm:flex-row items-center justify-between text-xs text-[#6b6255] font-sans-body font-light gap-4">
-          <p>© 2026 Soul Surfer Camp · the newest member of The Surfer family</p>
+          <p>© 2026 Sample Surfer Camp · sample website</p>
           <div className="flex items-center space-x-6">
             <Link to="/contact#booking-terms" className="hover:text-[#2a362a] transition-colors">Booking Terms</Link>
             <span>•</span>

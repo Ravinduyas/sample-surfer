@@ -1,6 +1,6 @@
 import { BlogPost } from '../types';
 
-// Articles carried over from the Soul Surfer Camp blog
+// Articles carried over from the Sample Surfer Camp blog
 export const BLOG_POSTS: BlogPost[] = [
   {
     "slug": "best-time-to-surf-weligama-month-by-month-guide",
@@ -145,7 +145,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "heading",
-        "text": "Where Soul Surfer sits in all this"
+        "text": "Where Sample Surfer sits in all this"
       },
       {
         "type": "p",
@@ -159,7 +159,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Surfing",
     "date": "2026-09-04",
     "readTime": "4 min read",
-    "image": "soulcamp2.jpg",
+    "image": "camp-pool.jpg",
     "excerpt": "A budget camp in Weligama starts near €350 a week, a boutique camp near €390. Where the difference actually goes – lessons, meals, rooms, group size, the pool…",
     "blocks": [
       {
@@ -248,11 +248,11 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "heading",
-        "text": "Where Soul Surfer sits"
+        "text": "Where Sample Surfer sits"
       },
       {
         "type": "p",
-        "text": "Soul Surfer Camp is a boutique camp by the definition above: new ensuite rooms including the dorm, a rooftop infinity pool and restaurant, six lessons in the Moderate package and eleven in Full Surf, breakfast daily, dinner six nights, video analysis and theory included, twenty seconds from the beach. Packages start at €390 a week in the dorm. The rates page has the full inclusions table, and the FAQ covers levels, boards and what to bring."
+        "text": "Sample Surfer Camp is a boutique camp by the definition above: new ensuite rooms including the dorm, a rooftop infinity pool and restaurant, six lessons in the Moderate package and eleven in Full Surf, breakfast daily, dinner six nights, video analysis and theory included, twenty seconds from the beach. Packages start at €390 a week in the dorm. The rates page has the full inclusions table, and the FAQ covers levels, boards and what to bring."
       }
     ]
   },
@@ -267,7 +267,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "blocks": [
       {
         "type": "p",
-        "text": "Most people who book a surf camp in Sri Lanka on their own spend the last week before the flight wondering whether they will be the only one. They will not be. At Soul Surfer, roughly half of guests arrive solo, and in the European winter a good share of those are women travelling alone. A surf camp is, honestly, the easiest way to travel solo in Sri Lanka, because the two hard parts of solo travel – logistics and company – are handled for you. Here is what it actually looks like."
+        "text": "Most people who book a surf camp in Sri Lanka on their own spend the last week before the flight wondering whether they will be the only one. They will not be. At Sample Surfer, roughly half of guests arrive solo, and in the European winter a good share of those are women travelling alone. A surf camp is, honestly, the easiest way to travel solo in Sri Lanka, because the two hard parts of solo travel – logistics and company – are handled for you. Here is what it actually looks like."
       },
       {
         "type": "heading",
@@ -291,7 +291,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "At the boutique end you have a real choice. The mixed dormitory at Soul Surfer is small – five beds – with an ensuite bathroom, air-conditioning and lockers, and it is where most solo travellers start because it is the cheapest way to be in the middle of things. If you want a door that closes, the private single is exactly that, ensuite, with the same access to everything else. Many solo guests book the dorm for their first trip and the single for their second."
+        "text": "At the boutique end you have a real choice. The mixed dormitory at Sample Surfer is small – five beds – with an ensuite bathroom, air-conditioning and lockers, and it is where most solo travellers start because it is the cheapest way to be in the middle of things. If you want a door that closes, the private single is exactly that, ensuite, with the same access to everything else. Many solo guests book the dorm for their first trip and the single for their second."
       },
       {
         "type": "p",
@@ -339,7 +339,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "The dorm at Soul Surfer starts at €390 for a week including six surf lessons, daily breakfast and dinner six nights. The rates page has the full table, and the FAQ answers the practical questions – including the one about whether the camp is suitable for solo female travellers, which is, in short, yes."
+        "text": "The dorm at Sample Surfer starts at €390 for a week including six surf lessons, daily breakfast and dinner six nights. The rates page has the full table, and the FAQ answers the practical questions – including the one about whether the camp is suitable for solo female travellers, which is, in short, yes."
       }
     ]
   },
@@ -366,7 +366,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "The trade-off is company. Because it is the safest beginner wave on the island, it is also the most crowded. The middle of the bay, in front of the town, can be busy by eight in the morning in January. The eastern end, towards Paranakade, is noticeably quieter, which is where Soul Surfer's beach lessons run."
+        "text": "The trade-off is company. Because it is the safest beginner wave on the island, it is also the most crowded. The middle of the bay, in front of the town, can be busy by eight in the morning in January. The eastern end, towards Paranakade, is noticeably quieter, which is where Sample Surfer's beach lessons run."
       },
       {
         "type": "p",
@@ -426,7 +426,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "The distances are small. From Soul Surfer Camp at the eastern end of Weligama, Midigama is about ten minutes by tuk-tuk and Ahangama about fifteen. The Moderate Surf and Full Surf packages include guided sessions at the reefs for guests who are ready for them, with a coach who has surfed these breaks for years choosing the spot each morning based on the swell, tide and wind, and a video review afterwards. Beginners stay in the bay until they are not beginners any more – usually by the middle of the first week."
+        "text": "The distances are small. From Sample Surfer Camp at the eastern end of Weligama, Midigama is about ten minutes by tuk-tuk and Ahangama about fifteen. The Moderate Surf and Full Surf packages include guided sessions at the reefs for guests who are ready for them, with a coach who has surfed these breaks for years choosing the spot each morning based on the swell, tide and wind, and a video review afterwards. Beginners stay in the bay until they are not beginners any more – usually by the middle of the first week."
       },
       {
         "type": "heading",
@@ -648,7 +648,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Weligama Bay is widely regarded as Sri Lanka's best beginner and intermediate surf bay. The bay is over 2 km of sandy beach, the waves break gently and consistently, and there are no rocks or strong currents. It is also where Soul Surfer Camp sits, a few minutes from the sand."
+        "text": "Weligama Bay is widely regarded as Sri Lanka's best beginner and intermediate surf bay. The bay is over 2 km of sandy beach, the waves break gently and consistently, and there are no rocks or strong currents. It is also where Sample Surfer Camp sits, a few minutes from the sand."
       },
       {
         "type": "p",
@@ -695,7 +695,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Weligama has camps at every budget tier, and they all surf the same bay. Here is roughly what each tier costs, and where Soul Surfer Camp sits:"
+        "text": "Weligama has camps at every budget tier, and they all surf the same bay. Here is roughly what each tier costs, and where Sample Surfer Camp sits:"
       },
       {
         "type": "p",
@@ -707,7 +707,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Soul Surfer Camp (boutique): Stylish en-suite AC rooms, rooftop infinity pool, ocean-view rooftop restaurant, daily rooftop yoga and small-group surf sessions on our own schedule. From around €100 per night. 7 nights ≈ €700."
+        "text": "Sample Surfer Camp (boutique): Stylish en-suite AC rooms, rooftop infinity pool, ocean-view rooftop restaurant, daily rooftop yoga and small-group surf sessions on our own schedule. From around €100 per night. 7 nights ≈ €700."
       },
       {
         "type": "p",
@@ -799,7 +799,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Solo traveller, budget camp + budget flight: €1,000–€1,200 Couple, mid-range camp + average flight: ~€2,000–€2,400 for two Solo traveller, Soul Surfer Camp + business class flight: €2,500+"
+        "text": "Solo traveller, budget camp + budget flight: €1,000–€1,200 Couple, mid-range camp + average flight: ~€2,000–€2,400 for two Solo traveller, Sample Surfer Camp + business class flight: €2,500+"
       },
       {
         "type": "p",
@@ -822,7 +822,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "blocks": [
       {
         "type": "p",
-        "text": "If you want to surf the best waves of your Sri Lanka trip, you need to understand the forecast - not just read a wave-height number. Here's how the south coast works, and which forecasting sites we actually use at Soul Surfer Camp."
+        "text": "If you want to surf the best waves of your Sri Lanka trip, you need to understand the forecast - not just read a wave-height number. Here's how the south coast works, and which forecasting sites we actually use at Sample Surfer Camp."
       },
       {
         "type": "heading",
@@ -1021,7 +1021,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "At Soul Surfer Camp in Weligama, your first day looks like this:"
+        "text": "At Sample Surfer Camp in Weligama, your first day looks like this:"
       },
       {
         "type": "p",
@@ -1184,7 +1184,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Weligama: Bustling small town with restaurants, cafes, yoga studios, juice bars. Lots of European travellers. Social, lively, easy to make friends. Soul Surfer Camp sits right in the middle of it."
+        "text": "Weligama: Bustling small town with restaurants, cafes, yoga studios, juice bars. Lots of European travellers. Social, lively, easy to make friends. Sample Surfer Camp sits right in the middle of it."
       },
       {
         "type": "p",
@@ -1248,7 +1248,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Soul Surfer Camp is a few minutes from Weligama Bay. See our packages and prices for the winter season, or contact us with questions."
+        "text": "Sample Surfer Camp is a few minutes from Weligama Bay. See our packages and prices for the winter season, or contact us with questions."
       }
     ]
   },
@@ -1474,7 +1474,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "To make sure that you don’t end up making these mistakes you should join a surf camp such as Soul Surfer Camp in Weligama, where you come to learn all there is to about surfing, including the common mistakes that beginners do and how to avoid them. Following are the six most annoying surfing blunders and ways you could ensure your safety; 1. Selecting the wrong surfboard"
+        "text": "To make sure that you don’t end up making these mistakes you should join a surf camp such as Sample Surfer Camp in Weligama, where you come to learn all there is to about surfing, including the common mistakes that beginners do and how to avoid them. Following are the six most annoying surfing blunders and ways you could ensure your safety; 1. Selecting the wrong surfboard"
       },
       {
         "type": "p",
@@ -1663,7 +1663,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "If you want to have the ultimate surfing experience, choose Soul Surfer Camp in Weligama and leave your worries behind!"
+        "text": "If you want to have the ultimate surfing experience, choose Sample Surfer Camp in Weligama and leave your worries behind!"
       }
     ]
   },
@@ -1710,7 +1710,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Most people who come to stay with us at Soul Surfer Camp in Weligama are mainly rooting for the Glass-on fins without giving much credit to the removable fins. But only when they come around to the possibilities and the diverse use cases of the removable fins do they begin to lose support for the glass-on fins to support their removable counterpart. You get more ease of use and diversity with the removable fins because in case you don’t like them or are not satisfied with one specific type of fin, you can just be rid of it and try out a new one, the same can’t be said for the glass-on fin system. You can allocate many of these removable fins into your fin box with the tightening key. Whenever you want you can use the key to unscrew the previous one to slap a new one onto your surfboard. It takes a bit of time and getting know to the procedure but after that, it is like a piece of cake."
+        "text": "Most people who come to stay with us at Sample Surfer Camp in Weligama are mainly rooting for the Glass-on fins without giving much credit to the removable fins. But only when they come around to the possibilities and the diverse use cases of the removable fins do they begin to lose support for the glass-on fins to support their removable counterpart. You get more ease of use and diversity with the removable fins because in case you don’t like them or are not satisfied with one specific type of fin, you can just be rid of it and try out a new one, the same can’t be said for the glass-on fin system. You can allocate many of these removable fins into your fin box with the tightening key. Whenever you want you can use the key to unscrew the previous one to slap a new one onto your surfboard. It takes a bit of time and getting know to the procedure but after that, it is like a piece of cake."
       }
     ]
   },
@@ -1749,7 +1749,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         "type": "p",
-        "text": "Surfing in Sri Lanka proposes its own specific challenges and things that will require time for you to get a grip on but with our surf camp in Sri Lanka on your side you can come on top of these challenges pretty easily. Soul Surfer Camp in Weligama is a boutique surf camp on the south coast that lets you get proper direction into the world of surfing, doesn’t matter if you are a beginner or already have an understanding of the art our surf camp in Weligama will help you become a better surfer."
+        "text": "Surfing in Sri Lanka proposes its own specific challenges and things that will require time for you to get a grip on but with our surf camp in Sri Lanka on your side you can come on top of these challenges pretty easily. Sample Surfer Camp in Weligama is a boutique surf camp on the south coast that lets you get proper direction into the world of surfing, doesn’t matter if you are a beginner or already have an understanding of the art our surf camp in Weligama will help you become a better surfer."
       }
     ]
   }

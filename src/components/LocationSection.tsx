@@ -11,7 +11,7 @@ export const LocationSection: React.FC = () => {
             FIND US
           </h2>
           <p className="font-sans-body text-xs sm:text-sm font-light leading-relaxed text-[#5c5448]">
-            Soul Surfer's own corner of Weligama: a quiet street address at Paranakade, on the eastern end of Weligama Bay - minutes from the town and with the surf break right in front of the camp.
+            Sample Surfer's own corner of Weligama: a quiet street address at Paranakade, on the eastern end of Weligama Bay - minutes from the town and with the surf break right in front of the camp.
           </p>
 
           <div className="space-y-5 pt-2">
@@ -54,7 +54,7 @@ export const LocationSection: React.FC = () => {
 
         <div className="lg:col-span-7 relative min-h-[22rem] rounded-3xl overflow-hidden shadow-lg bg-[#e8e2d5] border border-[#dcd4c4]">
           <iframe
-            title="Map showing Soul Surfer Camp in Weligama"
+            title="Map showing Sample Surfer Camp in Weligama"
             src={CAMP.mapsEmbed}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

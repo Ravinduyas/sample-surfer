@@ -38,7 +38,7 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({ showPageLi
           <div className="lg:col-span-5 relative group min-h-[420px] lg:min-h-[580px] rounded-3xl overflow-hidden shadow-2xl bg-[#1e271e]">
             <img
               src={IMAGES.boatParty}
-              alt="Soul Surfer Camp sunset boat party"
+              alt="Sample Surfer Camp sunset boat party"
               className="w-full h-full object-cover object-center filter brightness-[0.88] group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 sm:p-8 flex flex-col justify-end text-white">

@@ -95,7 +95,7 @@ export const DailyRhythmSection: React.FC = () => {
           <div className="lg:col-span-5 relative min-h-[18rem] rounded-3xl overflow-hidden shadow-lg bg-[#1e271e]">
             <img
               src={IMAGES.rooftop}
-              alt="Rooftop infinity pool and dining terrace at Soul Surfer Camp, Weligama"
+              alt="Rooftop infinity pool and dining terrace at Sample Surfer Camp, Weligama"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>

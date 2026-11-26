@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // GitHub Pages serves the site from /Soul-Surfer-Sample01/; set BASE_PATH there at build time.
+    // GitHub Pages serves the site from /sample-surfer/; set BASE_PATH there at build time.
     base: process.env.BASE_PATH || '/',
     plugins: [react(), tailwindcss()],
     resolve: {

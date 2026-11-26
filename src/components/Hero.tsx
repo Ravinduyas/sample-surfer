@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
         <img
           src={IMAGES.homeHero}
           alt="Surfer walking into the sea at sunset in Weligama"
-          className="w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-[1.05]"
+          className="hero-zoom w-full h-full object-cover object-center scale-105 filter brightness-[0.78] contrast-[1.05]"
         />
         {/* Soft vignette gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#1b231b]/90 via-black/20 to-black/40" />

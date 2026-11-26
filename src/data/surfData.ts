@@ -5,18 +5,18 @@ export const photo = (file: string) => `${import.meta.env.BASE_URL}images/${file
 
 // Camp details: shown in the header, footer and contact page
 export const CAMP = {
-  name: 'SOUL SURFER',
+  name: 'SAMPLE SURFER',
   tagline: 'Camp Weligama',
   location: 'Weligama, Sri Lanka',
-  addressLines: ['No. 140/13, 3rd Lane, Paranakade', 'Weligama 81700, Sri Lanka'],
-  plusCode: 'XCCG+M9P Weligama',
-  phone: '+94 76 696 6543',
-  whatsapp: 'https://wa.me/94766966543',
-  email: 'stay@soulsurfercamp.com',
+  addressLines: ['123 Sample Beach Road', 'Weligama, Sri Lanka'],
+  plusCode: 'Weligama, Sri Lanka',
+  phone: '+00 000 000 000',
+  whatsapp: 'https://wa.me/',
+  email: 'hello@samplesurfer.example',
   hours: 'Reception 07:00–21:00, daily',
-  mapsUrl: 'https://maps.app.goo.gl/9zyGn3aWbNUL7ey18',
-  mapsEmbed: 'https://www.google.com/maps?q=XCCG%2BM9P+Weligama,+Sri+Lanka&z=16&output=embed',
-  instagram: 'https://www.instagram.com/soulsurfercamp/',
+  mapsUrl: 'https://maps.google.com/?q=Weligama,+Sri+Lanka',
+  mapsEmbed: 'https://www.google.com/maps?q=Weligama,+Sri+Lanka&z=16&output=embed',
+  instagram: 'https://www.instagram.com/',
   badge: 'NEW CAMP',
 };
 
@@ -29,9 +29,9 @@ export const IMAGES = {
   blogHero: photo('package-yoga.jpg'),
   surfHosts: photo('3.jpg'),
   rooftop: photo('7.jpg'),
-  pool: photo('soulcamp2.jpg'),
-  dining: photo('soulcamp3.jpg'),
-  reception: photo('soulcamp5.jpg'),
+  pool: photo('camp-pool.jpg'),
+  dining: photo('camp-dining.jpg'),
+  reception: photo('camp-reception.jpg'),
   newRoom: photo('room-3.jpg'),
   boatParty: photo('boat.jpg'),
   ctaBanner: photo('package-full.jpg'),
@@ -152,7 +152,7 @@ export const ACTIVITIES: Activity[] = [
     id: 'meet-people',
     title: 'Meet New People From All Around The World',
     eyebrow: 'Your new crew',
-    description: "We have plenty of activities for you and group events every day. No matter if you're with friends or travelling solo, you are never alone at Soul Surfer Camp.",
+    description: "We have plenty of activities for you and group events every day. No matter if you're with friends or travelling solo, you are never alone at Sample Surfer Camp.",
     image: photo('acti-5.jpg'),
     gallery: ['friends1.jpg', 'acti-5.jpg', 'people2.jpg'].map(photo),
     verticalLabel: 'NEW PEOPLE',
@@ -161,7 +161,7 @@ export const ACTIVITIES: Activity[] = [
     id: 'surf-holiday',
     title: 'Have an Unforgettable Surf Holiday',
     eyebrow: 'However you surf',
-    description: 'No matter if you have ever surfed before or not. We at Soul Surfer Camp take care of your surfing experience - from complete beginners to advanced surfers.',
+    description: 'No matter if you have ever surfed before or not. We at Sample Surfer Camp take care of your surfing experience - from complete beginners to advanced surfers.',
     image: photo('act1.jpg'),
     gallery: ['main1.jpg', 'main3.jpg', 'main2.jpg'].map(photo),
     verticalLabel: 'SURF HOLIDAY',
@@ -170,7 +170,7 @@ export const ACTIVITIES: Activity[] = [
     id: 'friends',
     title: 'Make New Friends For Life',
     eyebrow: 'Beyond the trip',
-    description: 'Once you have stayed at Soul Surfer Camp in Weligama, you are always part of the family.',
+    description: 'Once you have stayed at Sample Surfer Camp in Weligama, you are always part of the family.',
     image: photo('act3.jpg'),
     gallery: ['info_4.jpg', 'info_5.jpg', 'info_6.jpg'].map(photo),
     verticalLabel: 'FRIENDS FOR LIFE',
@@ -186,10 +186,10 @@ export const DAILY_RHYTHM: DayMoment[] = [
 ];
 
 export const FACILITIES: Facility[] = [
-  { id: 'pool', title: 'Rooftop Pool', caption: 'Infinity pool overlooking the ocean', description: 'Open to every guest all day - most of the camp ends up here between the morning surf and the evening session.', image: photo('soulcamp2.jpg') },
-  { id: 'dining', title: 'Sea-View Dining', caption: 'Sea-view rooftop restaurant', description: 'Long timber tables and open sea views. Breakfast every day and dinner six nights a week are served up here.', image: photo('soulcamp3.jpg') },
+  { id: 'pool', title: 'Rooftop Pool', caption: 'Infinity pool overlooking the ocean', description: 'Open to every guest all day - most of the camp ends up here between the morning surf and the evening session.', image: photo('camp-pool.jpg') },
+  { id: 'dining', title: 'Sea-View Dining', caption: 'Sea-view rooftop restaurant', description: 'Long timber tables and open sea views. Breakfast every day and dinner six nights a week are served up here.', image: photo('camp-dining.jpg') },
   { id: 'rooms', title: 'New Rooms', caption: 'Brand new private rooms', description: 'Built for the camp’s opening rather than converted from an older guesthouse - every room is ensuite.', image: photo('room-3.jpg') },
-  { id: 'reception', title: 'Reception', caption: 'Reception and lounge', description: 'Lounge seating opening onto a courtyard, with the team on hand from 07:00 to 21:00 every day.', image: photo('soulcamp5.jpg') },
+  { id: 'reception', title: 'Reception', caption: 'Reception and lounge', description: 'Lounge seating opening onto a courtyard, with the team on hand from 07:00 to 21:00 every day.', image: photo('camp-reception.jpg') },
 ];
 
 // What makes the camp different (The Camp page)
@@ -210,22 +210,22 @@ export const GALLERY: { src: string; alt: string }[] = [
 ];
 
 export const FAQS: FaqItem[] = [
-  { question: 'What makes Soul Surfer Camp different from other surf camps in Weligama?', answer: 'Soul Surfer is a boutique surf retreat in Weligama. We combine premium rooms, dedicated surf coaching, a rooftop infinity pool and restaurant, and a quieter, more personal atmosphere - while staying just steps from the beach. Expect smaller groups, experienced coaches, and local knowledge that gets you into the right waves.' },
+  { question: 'What makes Sample Surfer Camp different from other surf camps in Weligama?', answer: 'Sample Surfer is a boutique surf retreat in Weligama. We combine premium rooms, dedicated surf coaching, a rooftop infinity pool and restaurant, and a quieter, more personal atmosphere - while staying just steps from the beach. Expect smaller groups, experienced coaches, and local knowledge that gets you into the right waves.' },
   { question: 'What surf levels do you cater for?', answer: 'We welcome surfers of all levels, from complete beginners taking their very first lesson to experienced surfers looking to improve their technique or explore Sri Lanka’s best reef breaks. Our experienced coaches place you in the right group based on your ability, ensuring safe, personalised progression. Throughout the week, we also provide video analysis sessions, helping you review your surfing, receive detailed feedback, and progress faster in and out of the water.' },
   { question: 'Do I need my own board?', answer: 'No - you don’t need to bring your own board. We provide a range of boards for all levels (softboards for beginners, performance boards for advanced surfers). If you prefer to travel with your own gear we have secure storage too.' },
-  { question: 'Where is Soul Surfer Camp located?', answer: 'Soul Surfer Camp is located in Weligama, Sri Lanka, just a short walk from the beach and some of the country’s best beginner and intermediate surf breaks. Shops, cafés, restaurants, and nightlife are all within easy reach.' },
+  { question: 'Where is Sample Surfer Camp located?', answer: 'Sample Surfer Camp is located in Weligama, Sri Lanka, just a short walk from the beach and some of the country’s best beginner and intermediate surf breaks. Shops, cafés, restaurants, and nightlife are all within easy reach.' },
   { question: 'What’s included in your surf camp packages?', answer: 'Our surf camp packages include accommodation, daily breakfast, surf lessons (depending on your package), surfboard use during lessons, professional coaching, video analysis, and access to our daily social activities. Guests also join our signature community events, including boat parties, live music nights, and pool parties.' },
   { question: 'Why choose a surf camp in Weligama, Sri Lanka?', answer: 'Weligama is one of the best places to learn to surf in Sri Lanka, thanks to its warm water, consistent waves, and sandy-bottom beach break. It’s suitable for complete beginners while also offering nearby reef breaks for intermediate and advanced surfers, making it an ideal destination for surfers of all levels.' },
   { question: 'Can I join if I’m travelling solo?', answer: 'Absolutely! Many of our guests travel solo. Our daily activities, surf lessons, family dinners, and social events make it easy to meet like-minded travellers from around the world.' },
   { question: 'When is the best time to surf in Weligama?', answer: 'The best surfing season on Sri Lanka’s south coast is from October to May, with warm tropical weather and consistent waves. Our experienced instructors will choose the best surf spots each day based on the conditions and your ability.' },
-  { question: 'Does Soul Surfer Camp have a pool?', answer: 'Yes. Soul Surfer Camp has a rooftop infinity pool overlooking the ocean, open to all guests throughout the day. It sits beside the rooftop restaurant, so most guests end up there between surf sessions – cooling off, reading, or watching the sunset over Weligama Bay before dinner is served.' },
-  { question: 'Are all rooms ensuite?', answer: 'Yes. Every room at Soul Surfer Camp – the mixed dormitory, the private single and the private double or twin – has its own ensuite bathroom with hot water, plus air conditioning. The rooms are brand-new, built for the camp’s opening rather than converted from an older guesthouse.' },
+  { question: 'Does Sample Surfer Camp have a pool?', answer: 'Yes. Sample Surfer Camp has a rooftop infinity pool overlooking the ocean, open to all guests throughout the day. It sits beside the rooftop restaurant, so most guests end up there between surf sessions – cooling off, reading, or watching the sunset over Weligama Bay before dinner is served.' },
+  { question: 'Are all rooms ensuite?', answer: 'Yes. Every room at Sample Surfer Camp – the mixed dormitory, the private single and the private double or twin – has its own ensuite bathroom with hot water, plus air conditioning. The rooms are brand-new, built for the camp’s opening rather than converted from an older guesthouse.' },
   { question: 'How far is the beach from the camp?', answer: 'About 20 seconds on foot. The camp sits directly behind the beach at Paranakade, on the eastern end of Weligama Bay, so the surf break is in front of the camp. Weligama town, with its cafés, restaurants and surf shops, is a five to ten minute walk along the bay.' },
-  { question: 'Is Soul Surfer Camp suitable for solo female travellers?', answer: 'Yes – around half of our guests travel alone, and many are women. Rooms lock, the dormitory is mixed but small, staff are on site through the evening, and the daily social programme means you meet the rest of the group on your first night rather than eating alone.' },
+  { question: 'Is Sample Surfer Camp suitable for solo female travellers?', answer: 'Yes – around half of our guests travel alone, and many are women. Rooms lock, the dormitory is mixed but small, staff are on site through the evening, and the daily social programme means you meet the rest of the group on your first night rather than eating alone.' },
 ];
 
 export const ACTIVITY_FAQS: FaqItem[] = [
-  { question: 'What activities are included at Soul Surfer Camp?', answer: 'Every package includes daily social activities run by the camp team: sunset sessions on the rooftop, shared dinners six nights a week, live music nights and beach games, plus the weekly sunset boat party. Surf theory classes, video analysis and yoga sessions are also part of every package, not paid extras.' },
+  { question: 'What activities are included at Sample Surfer Camp?', answer: 'Every package includes daily social activities run by the camp team: sunset sessions on the rooftop, shared dinners six nights a week, live music nights and beach games, plus the weekly sunset boat party. Surf theory classes, video analysis and yoga sessions are also part of every package, not paid extras.' },
   { question: 'What can I do in Weligama between surf sessions?', answer: 'Most guests split the middle of the day between the rooftop pool and Weligama town, a short walk along the bay: cafés, smoothie bars, surf shops and a small market. Yoga runs at sunrise or sunset, and the camp can arrange a scooter, a massage or a tuk-tuk to Mirissa beach in minutes.' },
   { question: 'Which day trips run from the camp?', answer: 'Whale watching from Mirissa (December to April), the Dutch fort at Galle, the tea plantations and waterfalls inland around Deniyaya, and a snorkelling trip to Turtle Bay at Hiriketiya are the regular ones. The team books them for you; most leave after the morning surf so you never miss a lesson.' },
 ];

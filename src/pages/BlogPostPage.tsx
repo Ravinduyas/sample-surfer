@@ -48,7 +48,7 @@ export const BlogPostPage: React.FC = () => {
       {/* ARTICLE HEADER */}
       <section className="relative w-full min-h-[46vh] sm:min-h-[52vh] flex flex-col justify-end overflow-hidden rounded-[2.5rem] bg-[#1e271e] text-white my-2 shadow-2xl">
         <div className="absolute inset-0 z-0">
-          <img src={photo(post.image)} alt={post.title} className="w-full h-full object-cover object-center filter brightness-[0.7]" />
+          <img src={photo(post.image)} alt={post.title} className="hero-zoom w-full h-full object-cover object-center filter brightness-[0.7]" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1b231b]/90 via-black/30 to-black/30" />
         </div>
         <div className="relative z-10 px-6 sm:px-12 lg:px-16 pb-10 sm:pb-14 pt-24 max-w-4xl space-y-4">
@@ -106,7 +106,7 @@ export const BlogPostPage: React.FC = () => {
         </div>
       </section>
 
-      <CtaBanner title="READY TO RIDE?" text="Book your surf experience at Soul Surfer Camp - 20 seconds from the beach in Weligama." />
+      <CtaBanner title="READY TO RIDE?" text="Book your surf experience at Sample Surfer Camp - 20 seconds from the beach in Weligama." />
     </>
   );
 };

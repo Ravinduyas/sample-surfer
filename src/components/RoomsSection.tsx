@@ -26,7 +26,7 @@ const RoomCard: React.FC<{ room: Room; index: number }> = ({ room, index }) => {
             <motion.img
               key={src}
               src={src}
-              alt={isActive ? `${room.name} at Soul Surfer Camp - photo ${idx + 1}` : ''}
+              alt={isActive ? `${room.name} at Sample Surfer Camp - photo ${idx + 1}` : ''}
               aria-hidden={!isActive}
               loading={idx === 0 ? 'eager' : 'lazy'}
               initial={false}

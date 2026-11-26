@@ -31,7 +31,7 @@ export const AboutSection: React.FC = () => {
                 Built by experienced surf hosts who know Weligama and its waves.
               </p>
               <p>
-                Designed for travellers seeking a more boutique experience, Soul Surfer offers stylish accommodation, professional surf coaching, rooftop ocean views, and a peaceful atmosphere just moments from Weligama Beach.
+                Designed for travellers seeking a more boutique experience, Sample Surfer offers stylish accommodation, professional surf coaching, rooftop ocean views, and a peaceful atmosphere just moments from Weligama Beach.
               </p>
               <p>
                 It has its own character: the intimate feel of a boutique camp, with its own daily social events and community atmosphere, and hosts who know Weligama inside out.
@@ -59,12 +59,12 @@ export const AboutSection: React.FC = () => {
               <div className="relative z-10 w-44 sm:w-52 h-64 sm:h-72 rounded-xl overflow-hidden shadow-2xl bg-black border border-white/20 group">
                 <img
                   src={IMAGES.surfHosts}
-                  alt="Soul Surfer Camp surf experience"
+                  alt="Sample Surfer Camp surf experience"
                   className="w-full h-full object-cover filter brightness-[0.7] contrast-110 group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-center justify-center p-4">
                   <span className="font-serif-cormorant text-3xl sm:text-4xl font-light tracking-[0.2em] uppercase text-white drop-shadow-md text-center leading-tight">
-                    SOUL<br />SURFER
+                    SAMPLE<br />SURFER
                   </span>
                 </div>
               </div>

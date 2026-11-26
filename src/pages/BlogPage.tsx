@@ -21,7 +21,7 @@ export const BlogPage: React.FC = () => (
             ALL ARTICLES
           </h2>
           <p className="font-sans-body text-xs sm:text-sm font-light text-[#6b6255] mt-2">
-            {BLOG_POSTS.length} articles from the Soul Surfer team
+            {BLOG_POSTS.length} articles from the Sample Surfer team
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

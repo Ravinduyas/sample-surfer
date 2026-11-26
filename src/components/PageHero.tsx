@@ -17,7 +17,7 @@ export const PageHero: React.FC<PageHeroProps> = ({ title, eyebrow, intro, image
         <img
           src={image}
           alt={imageAlt}
-          className="w-full h-full object-cover object-center scale-105 filter brightness-[0.75] contrast-[1.05]"
+          className="hero-zoom w-full h-full object-cover object-center scale-105 filter brightness-[0.75] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1b231b]/90 via-black/20 to-black/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />

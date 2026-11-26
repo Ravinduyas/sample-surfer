@@ -14,7 +14,7 @@ interface FaqSectionProps {
 export const FaqSection: React.FC<FaqSectionProps> = ({
   items = FAQS,
   title = 'FAQ',
-  intro = 'Everything you need to know before you book your stay at Soul Surfer Camp. Still have questions? Just ask.',
+  intro = 'Everything you need to know before you book your stay at Sample Surfer Camp. Still have questions? Just ask.',
   id = 'faq',
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

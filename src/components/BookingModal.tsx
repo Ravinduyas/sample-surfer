@@ -67,7 +67,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
           <div>
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-semibold text-[#2a362a] mb-1">
               <Waves className="w-4 h-4 text-amber-700" />
-              <span>Soul Surfer Camp</span>
+              <span>Sample Surfer Camp</span>
             </div>
             <h3 className="font-serif-cormorant text-3xl font-light tracking-[0.14em] uppercase text-[#2a362a] mb-6">
               BOOK YOUR STAY

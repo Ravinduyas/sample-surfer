@@ -24,7 +24,7 @@ export const ContactsSection: React.FC = () => {
   };
 
   const details = [
-    { icon: MapPin, heading: 'Soul Surfer Camp', body: <a href={CAMP.mapsUrl} target="_blank" rel="noreferrer" className="hover:text-[#2a362a]">{CAMP.addressLines[0]}<br />{CAMP.addressLines[1]}</a> },
+    { icon: MapPin, heading: 'Sample Surfer Camp', body: <a href={CAMP.mapsUrl} target="_blank" rel="noreferrer" className="hover:text-[#2a362a]">{CAMP.addressLines[0]}<br />{CAMP.addressLines[1]}</a> },
     { icon: Phone, heading: 'Phone / WhatsApp', body: <a href={CAMP.whatsapp} target="_blank" rel="noreferrer" className="hover:text-[#2a362a]">{CAMP.phone}</a> },
     { icon: Mail, heading: 'Email', body: <a href={`mailto:${CAMP.email}`} className="hover:text-[#2a362a]">{CAMP.email}</a> },
     { icon: Clock, heading: 'Reception', body: <>07:00–21:00, daily</> },
@@ -79,7 +79,7 @@ export const ContactsSection: React.FC = () => {
                 <CheckCircle2 className="w-14 h-14 text-emerald-700 animate-bounce" />
                 <h4 className="font-serif-cormorant text-3xl text-[#2a362a]">Message Received</h4>
                 <p className="font-sans-body text-xs text-[#5c5448] max-w-md">
-                  Thanks for reaching out to Soul Surfer Camp. We'll get back to you within 24 hours.
+                  Thanks for reaching out to Sample Surfer Camp. We'll get back to you within 24 hours.
                 </p>
               </div>
             ) : (

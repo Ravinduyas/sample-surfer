@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
         {/* LOGO */}
         <Link to="/" className="flex items-baseline gap-2 group focus:outline-none shrink-0 whitespace-nowrap">
           <span className="font-serif-cormorant text-3xl lg:text-[2rem] xl:text-[2.5rem] font-light tracking-[0.12em] text-[#2a362a] group-hover:opacity-90 transition-opacity">
-            SOUL SURFER
+            SAMPLE SURFER
           </span>
           <span className="hidden sm:inline lg:hidden 2xl:inline font-serif-cormorant text-sm sm:text-base font-light tracking-[0.3em] text-[#2a362a]/80 uppercase group-hover:opacity-90 transition-opacity">
             Camp
